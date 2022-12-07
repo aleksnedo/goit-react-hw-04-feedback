@@ -4,6 +4,7 @@ import Section from '../Section';
 import Feedback from '../Feedback';
 import Statistics from '../Statistics';
 import Notification from '../Notification';
+import { Container } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -33,7 +34,7 @@ export class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <>
+      <Container>
         <Section title="Please leave feedback">
           <Feedback options={nameKeys} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
@@ -51,7 +52,7 @@ export class App extends Component {
             />
           )}
         </Section>
-      </>
+      </Container>
     );
   }
 }
