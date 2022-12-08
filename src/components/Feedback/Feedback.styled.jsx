@@ -26,6 +26,5 @@ export const Button = styled.button`
   &:hover,
   &:focus {
     scale: 1.045;
-    background-color: green;
   }
 `;
