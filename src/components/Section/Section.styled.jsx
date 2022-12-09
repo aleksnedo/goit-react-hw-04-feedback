@@ -6,7 +6,7 @@ export const SectionContainer = styled.section`
   border-bottom: solid 1px gray;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 38px;
   margin-bottom: 15px;
 `;
